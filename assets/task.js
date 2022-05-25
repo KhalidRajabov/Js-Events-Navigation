@@ -6,23 +6,23 @@ window.addEventListener("load", () => {
   div.style.top = 0;
 });
 swal ( "WASD ve ya arrow keylei ile hereket et" ,   "" )
-window.addEventListener("keyup", (event) => {
+window.addEventListener("keydown", (event) => {
   switch (event.key) {
     case "ArrowLeft":
     case `a`:
-      div.style.left = parseInt(div.style.left) - 5 + "px";
+      div.style.left = parseInt(div.style.left) - 15 + "px";
       break;
     case "ArrowRight":
     case `d`:
-      div.style.left = parseInt(div.style.left) + 5 + "px";
+      div.style.left = parseInt(div.style.left) + 15 + "px";
       break;
     case "ArrowUp":
     case `w`:
-      div.style.top = parseInt(div.style.top) - 5 + "px";
+      div.style.top = parseInt(div.style.top) - 15 + "px";
       break;
     case "ArrowDown":
     case `s`:
-      div.style.top = parseInt(div.style.top) + 5 + "px";
+      div.style.top = parseInt(div.style.top) + 15 + "px";
       break;
     default:
         swal ( "Bashqa duymeleri basma" ,  "" ,  "error" )
