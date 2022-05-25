@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        body{
+            position: relative;
+        }
+        .side{
+            position: relative;
+            width: 300px;
+            height: 100vh;
+            background-color: black;
+        }
+        ul{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            list-style: none;
+            margin-top: 20%;
+        }
+        li{
+            margin-top: 40%;
+        }
+        li:hover{
+            transform:scale(1.5);
+
+        }
+        a{
+            font-size: 200%;
+            color: rgb(255, 179, 0);
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            transform: rotateY(180deg);
+        }
+        #icon{
+            position: absolute;
+            right: 10%;
+            top: 3%;
+            color: red;
+            font-size: 200%;
+            cursor: pointer;
+        }
+        #icon:hover{
+            color: white;
+        }
+        #burger{
+            position: absolute;
+            left: -1%;
+            top: 1%;
+            color: red;
+            font-size: 200%;
+            cursor: pointer;
+        }
+        .hide{
+            transform: translateX(-600px) rotate(90deg);
+        }
+        .logo{
+            width: 35%;
+            margin: 3% 10%;
+        }
+    </style>
+</head>
+<body>
+    <i id="burger" class="fa-solid fa-bars"></i>
+    <div id="side" class="side">
+        <img class="logo" src="images/download.jpg" alt="">
+        <i id="icon" class="fa-solid fa-x"></i>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+</body>
+<script src="assets/burger.js"></script>
+</html>
