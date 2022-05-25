@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   div.style.left = 0;
   div.style.top = 0;
 });
-swal("ASDW ve ya arrow keyler ile hereket etdirin")
+swal ( "WASD ve ya arrow keylei ile hereket et" ,   "" )
 window.addEventListener("keyup", (event) => {
   switch (event.key) {
     case "ArrowLeft":
